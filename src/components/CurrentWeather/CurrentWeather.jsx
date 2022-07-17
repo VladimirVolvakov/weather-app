@@ -14,10 +14,10 @@ const CurrentWeather = () => {
         <img className='weather-icon' src={WeatherIcon} alt='Weather' />
       </div>
       <div className='card-bottom-part'>
-        <p className='temperature'>18 °C</p>
+        <p className='temperature'>18°C</p>
         <div className='weather-detailed'>
           <div className='parameter-row'>
-            <span className='parameter-label'>Details</span>
+            <span className='parameter-label parameter-label__heading'>Details</span>
           </div>
           <div className='parameter-row'>
             <span className='parameter-label'>Feels like</span>
