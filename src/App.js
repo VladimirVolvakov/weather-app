@@ -18,11 +18,11 @@ function App() {
     const [latitude, longitude] = searchData.value.split(" ");
     // Fetch data for current weather from API:
     const currentWeatherFetch = fetch(
-      `${WEATHER_API_URL}/weather?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}/weather?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}&units=metric`
     );
     // Fetch data for weather forecast from API:
     const weatherForecastFetch = fetch(
-      `${WEATHER_API_URL}/forecast?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}/forecast?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}&units=metric`
     );
     // Execute fetching:
     Promise.all([currentWeatherFetch, weatherForecastFetch])
