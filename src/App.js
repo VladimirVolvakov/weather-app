@@ -1,6 +1,7 @@
 // Components:
 import CitySearch from "./components/CitySearch/CitySearch";
 import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
+import WeatherForecast from "./components/WeatherForecast/WeatherForecast";
 // Styles:
 import "./App.css";
 // Hooks:
@@ -49,6 +50,9 @@ function App() {
       { currentWeather && (
         <CurrentWeather currentWeatherData={currentWeather} />
       ) }
+      { weatherForecast && (
+        <WeatherForecast weatherForecastData={weatherForecast} />
+      )}
     </div>
   );
 }
