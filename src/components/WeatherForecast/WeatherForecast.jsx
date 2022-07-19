@@ -1,5 +1,6 @@
 // Styles:
 import "./WeatherForecast.css";
+// Helper UI elements:
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
 
 const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -24,7 +25,7 @@ const WeatherForecast = ({ weatherForecastData }) => {
                   <img className="icon-small" src={`icons/${dailyForecast.weather[0].icon}.png`} alt="daily-weather" />
                   <label className="day-of-week">{weekdaysForForecast[index]}</label>
                   <label className="weather-description">{dailyForecast.weather[0].description}</label>
-                  <label className="temperature">{Math.round(dailyForecast.main.temp)}°C</label>
+                  <label className="forecast-temperature">{Math.round(dailyForecast.main.temp)}°C</label>
                   <label className="feels-like-temperature">{Math.round(dailyForecast.main.feels_like)}°C</label>
                   <label className="humidity">{dailyForecast.main.humidity}%</label>
                   <label className="pressure">{dailyForecast.main.pressure} mbar</label>
