@@ -26,10 +26,10 @@ const WeatherForecast = ({ weatherForecastData }) => {
                   <label className="day-of-week">{weekdaysForForecast[index]}</label>
                   <label className="weather-description">{dailyForecast.weather[0].description}</label>
                   <label className="forecast-temperature">{Math.round(dailyForecast.main.temp)}°C</label>
-                  <label className="feels-like-temperature">{Math.round(dailyForecast.main.feels_like)}°C</label>
-                  <label className="humidity">{dailyForecast.main.humidity}%</label>
-                  <label className="pressure">{dailyForecast.main.pressure} mbar</label>
-                  <label className="wind-speed">{Math.round(dailyForecast.wind.speed)} m/s</label>
+                  <label className="feels-like-temperature">Feels like <span className="value">{Math.round(dailyForecast.main.feels_like)}°C</span></label>
+                  <label className="humidity">Humidity: <span className="value">{dailyForecast.main.humidity} %</span></label>
+                  <label className="pressure">Pressure: <span className="value">{dailyForecast.main.pressure} mbar</span></label>
+                  <label className="wind-speed">Wind: <span className="value">{Math.round(dailyForecast.wind.speed)} m/s</span></label>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>

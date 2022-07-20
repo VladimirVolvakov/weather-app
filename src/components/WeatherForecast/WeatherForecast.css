@@ -1,6 +1,7 @@
 .title {
   font-size: 24px;
   font-weight: 700;
+  margin: 20px 0 10px 25px;
 }
 
 .daily-forecast {
@@ -12,7 +13,7 @@
   align-items: center;
   cursor: pointer;
   font-size: 14px;
-  padding: 5px 20px;
+  padding: 5px 30px;
 }
 
 .icon-small {
@@ -23,15 +24,44 @@
   font-weight: 600;
   color: #212121;
   flex: 1 1;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .weather-description {
   flex: 1 1;
-  margin: 0 15px;
+  /* margin: 0 15px; */
   text-align: left;
+  padding-left: 20px;
 }
 
 .forecast-temperature {
-  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+  /* color: #757575; */
+  flex: 1 1;
+  text-align: center;
+}
+
+.feels-like-temperature {
+  flex: 1 1;
+  text-align: center;
+}
+
+.humidity {
+  flex: 1 1;
+  text-align: center;
+}
+
+.pressure {
+  flex: 1 1;
+  text-align: center;
+}
+
+.wind-speed {
+  flex: 1 1;
+  text-align: center;
+}
+
+.value {
+  font-weight: 600;
 }
