@@ -13,7 +13,7 @@
   align-items: center;
   cursor: pointer;
   font-size: 14px;
-  padding: 5px 30px;
+  padding: 5px 20px;
 }
 
 .icon-small {
@@ -36,27 +36,12 @@
 
 .forecast-temperature {
   font-size: 20px;
-  font-weight: 600;
-  /* color: #757575; */
-  flex: 1 1;
-  text-align: center;
 }
 
-.feels-like-temperature {
-  flex: 1 1;
-  text-align: center;
-}
-
-.humidity {
-  flex: 1 1;
-  text-align: center;
-}
-
-.pressure {
-  flex: 1 1;
-  text-align: center;
-}
-
+.forecast-temperature,
+.feels-like-temperature,
+.humidity,
+.pressure,
 .wind-speed {
   flex: 1 1;
   text-align: center;

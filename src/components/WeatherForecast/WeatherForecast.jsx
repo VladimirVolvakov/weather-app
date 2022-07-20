@@ -25,7 +25,7 @@ const WeatherForecast = ({ weatherForecastData }) => {
                   <img className="icon-small" src={`icons/${dailyForecast.weather[0].icon}.png`} alt="daily-weather" />
                   <label className="day-of-week">{weekdaysForForecast[index]}</label>
                   <label className="weather-description">{dailyForecast.weather[0].description}</label>
-                  <label className="forecast-temperature">{Math.round(dailyForecast.main.temp)}°C</label>
+                  <label className="forecast-temperature value">{Math.round(dailyForecast.main.temp)}°C</label>
                   <label className="feels-like-temperature">Feels like <span className="value">{Math.round(dailyForecast.main.feels_like)}°C</span></label>
                   <label className="humidity">Humidity: <span className="value">{dailyForecast.main.humidity} %</span></label>
                   <label className="pressure">Pressure: <span className="value">{dailyForecast.main.pressure} mbar</span></label>
