@@ -3,7 +3,8 @@ import "./WeatherForecast.css";
 // Helper UI elements:
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
 
-const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const WEEK_DAYS = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
+// const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const WeatherForecast = ({ weatherForecastData }) => {
   // Get current day of week:
@@ -11,11 +12,9 @@ const WeatherForecast = ({ weatherForecastData }) => {
   // Get array of week days for next 7 days:
   const weekdaysForForecast = WEEK_DAYS.slice(dayOfWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayOfWeek));
 
-  console.log(weatherForecastData);
-
   return (
     <>
-      <label className="title">Daily</label>
+      <label className="title">Daily for next 7 days</label>
       <Accordion allowZeroExpanded>
         { weatherForecastData.list.splice(0, 7).map((dailyForecast, index) => (
           <AccordionItem key={index}>
